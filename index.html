@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion | With Vanila javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label">List One</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsam animi cumque labore maxime, corrupti voluptas officia cupiditate! Laudantium natus soluta neque tenetur rem odit fugiat tempore commodi nulla consectetur.</p>
+            </div>
+        </div>
+
+        <div class="contentBx">
+            <div class="label">List Two</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsam animi cumque labore maxime, corrupti
+                    voluptas officia cupiditate! Laudantium natus soluta neque tenetur rem odit fugiat tempore commodi nulla
+                    consectetur.</p>
+            </div>
+        </div>
+
+        <div class="contentBx">
+            <div class="label">List Three</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsam animi cumque labore maxime, corrupti
+                    voluptas officia cupiditate! Laudantium natus soluta neque tenetur rem odit fugiat tempore commodi nulla
+                    consectetur.</p>
+            </div>
+        </div>
+
+        <div class="contentBx">
+            <div class="label">List Four</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsam animi cumque labore maxime, corrupti
+                    voluptas officia cupiditate! Laudantium natus soluta neque tenetur rem odit fugiat tempore commodi nulla
+                    consectetur.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat error placeat debitis, veritatis illo adipisci soluta voluptate consequatur commodi aspernatur aperiam aut dolorum dolor nisi architecto provident amet iste, voluptatum magni quod reprehenderit! Ea blanditiis dignissimos nostrum animi magni odit fuga ad, nesciunt beatae facilis laboriosam cum deleniti adipisci soluta consectetur tenetur dolorem commodi. Repudiandae in magni id delectus molestiae, nobis adipisci iste fugit, error recusandae, aliquam illum ratione harum! Fugit dicta molestiae, eius nihil, quidem quas accusantium, aliquam praesentium nam repudiandae nulla sit? Perspiciatis minima fugit harum distinctio possimus facilis. Eaque necessitatibus odit dolorum magni autem quo omnis nobis!</p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">List Four</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsam animi cumque labore maxime, corrupti
+                    voluptas officia cupiditate! Laudantium natus soluta neque tenetur rem odit fugiat tempore commodi nulla
+                    consectetur.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat error placeat debitis, veritatis illo
+                    adipisci soluta voluptate consequatur commodi aspernatur aperiam aut dolorum dolor nisi architecto provident
+                    amet iste, voluptatum magni quod reprehenderit! Ea blanditiis dignissimos nostrum animi magni odit fuga ad,
+                    nesciunt beatae facilis laboriosam cum deleniti adipisci soluta consectetur tenetur dolorem commodi.
+                    Repudiandae in magni id delectus molestiae, nobis adipisci iste fugit, error recusandae, aliquam illum
+                    ratione harum! Fugit dicta molestiae, eius nihil, quidem quas accusantium, aliquam praesentium nam
+                    repudiandae nulla sit? Perspiciatis minima fugit harum distinctio possimus facilis. Eaque necessitatibus
+                    odit dolorum magni autem quo omnis nobis!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum doloremque pariatur nisi temporibus aut molestiae perspiciatis aliquid illum, praesentium dolorum magni, optio obcaecati autem veritatis reiciendis, laboriosam quo. Maiores minima officiis vero quas ipsum tempore adipisci voluptas culpa? Quod totam accusantium, facilis libero dicta dignissimos, atque maxime ratione facere magnam quaerat, cum aspernatur hic ab cumque minima eum sed praesentium. Qui repellat optio quo voluptate, aliquid accusantium rem sint labore molestiae doloribus. Dolorem inventore laborum totam quod, aperiam sint nam aut animi repellat et optio modi doloremque, incidunt possimus iusto amet ducimus quis fugiat facere, impedit fuga voluptate? Nobis, tempore.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const accordion = document.getElementsByClassName('contentBx');
+        for(i=0; i<accordion.length; i++){
+            accordion[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+</body>
+</html>
